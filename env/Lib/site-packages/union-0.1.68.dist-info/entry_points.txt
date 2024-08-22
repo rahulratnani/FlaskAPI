@@ -1,0 +1,17 @@
+[console_scripts]
+union = union.cli._main:main
+
+[flytekit.configuration.plugin]
+union = union.configuration:UnionAIPlugin
+
+[flytekit.plugins]
+union_actor = union.actor
+union_artifacts = union.artifacts
+union_image = union.ucimage
+
+[fsspec.specs]
+union = union.filesystems:AsyncUnionFS
+unionmeta = union.filesystems:AsyncUnionMetaFS
+
+[keyring.backends]
+union_keyring_file = union._keyring.file

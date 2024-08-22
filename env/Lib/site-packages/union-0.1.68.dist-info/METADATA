@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: union
+Version: 0.1.68
+Summary: Adds Union specific functionality to Flytekit
+Author-email: unionai <info@union.ai>
+License: Source code in this repository is licensed under the Business Source
+        License 1.1 (BSL) and the Apache License 2.0 (APL). A copy of each
+        license can be found in the licenses directory. Source code in a
+        given file is licensed under the BSL and the copyright belongs to
+        Union Systems, Inc. unless otherwise noted at the beginning of the
+        file.
+        
+Project-URL: Homepage, https://www.union.ai/
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+License-File: licenses/APL.txt
+License-File: licenses/BSL.txt
+License-File: LICENSE
+Requires-Dist: googleapis-common-protos >=1.57
+Requires-Dist: grpcio
+Requires-Dist: grpcio-status
+Requires-Dist: keyring
+Requires-Dist: importlib-metadata
+Requires-Dist: fsspec >=2023.3.0
+Requires-Dist: aiofiles >=23.2.1
+Requires-Dist: click
+Requires-Dist: rich
+Requires-Dist: rich-click
+Requires-Dist: flytekit >=1.13.3
+Requires-Dist: flyteidl >=1.13.1
+Requires-Dist: sentry-sdk >=2.0.0
+Requires-Dist: mashumaro
+Requires-Dist: jinja2
+Requires-Dist: pyyaml
+Requires-Dist: unionai-actor >=0.1.1 ; platform_system == "Linux" and platform_machine == "x86_64"
+Provides-Extra: byoc
+Requires-Dist: unionmeta-byoc ; extra == 'byoc'
+
+# UnionAI
+
+The SDK for [Union.ai](https://www.union.ai/).
+
+## Installation
+
+Install `union`:
+
+```bash
+pip install union
+```
